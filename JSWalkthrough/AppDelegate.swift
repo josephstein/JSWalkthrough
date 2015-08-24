@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  JSWalkthrough
 //
-//  Created by Joseph Stein on 8/23/15.
+//  Created by Joseph Stein on 6/9/15.
 //  Copyright (c) 2015 Joseph Stein. All rights reserved.
 //
 

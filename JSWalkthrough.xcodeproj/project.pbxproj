@@ -13,6 +13,8 @@
 		51F618DD1B8ACBC100A0F0DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51F618DC1B8ACBC100A0F0DC /* Images.xcassets */; };
 		51F618E01B8ACBC100A0F0DC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51F618DE1B8ACBC100A0F0DC /* LaunchScreen.xib */; };
 		51F618EC1B8ACBC200A0F0DC /* JSWalkthroughTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F618EB1B8ACBC200A0F0DC /* JSWalkthroughTests.swift */; };
+		51F618F91B8ACC5700A0F0DC /* WalkthroughStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F618F51B8ACC5700A0F0DC /* WalkthroughStoryboard.storyboard */; };
+		51F618FA1B8ACC5700A0F0DC /* JSWalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F618F81B8ACC5700A0F0DC /* JSWalkthroughViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		51F618E51B8ACBC200A0F0DC /* JSWalkthroughTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSWalkthroughTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F618EA1B8ACBC200A0F0DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51F618EB1B8ACBC200A0F0DC /* JSWalkthroughTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSWalkthroughTests.swift; sourceTree = "<group>"; };
+		51F618F51B8ACC5700A0F0DC /* WalkthroughStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WalkthroughStoryboard.storyboard; sourceTree = "<group>"; };
+		51F618F81B8ACC5700A0F0DC /* JSWalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSWalkthroughViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				51F618D51B8ACBC100A0F0DC /* AppDelegate.swift */,
-				51F618D71B8ACBC100A0F0DC /* ViewController.swift */,
-				51F618D91B8ACBC100A0F0DC /* Main.storyboard */,
 				51F618DC1B8ACBC100A0F0DC /* Images.xcassets */,
 				51F618DE1B8ACBC100A0F0DC /* LaunchScreen.xib */,
+				51F618F61B8ACC5700A0F0DC /* Libraries */,
+				51F618D91B8ACBC100A0F0DC /* Main.storyboard */,
 				51F618D31B8ACBC100A0F0DC /* Supporting Files */,
+				51F618D71B8ACBC100A0F0DC /* ViewController.swift */,
+				51F618F51B8ACC5700A0F0DC /* WalkthroughStoryboard.storyboard */,
 			);
 			path = JSWalkthrough;
 			sourceTree = "<group>";
@@ -110,6 +116,22 @@
 				51F618EA1B8ACBC200A0F0DC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		51F618F61B8ACC5700A0F0DC /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				51F618F71B8ACC5700A0F0DC /* JSWalkthrough */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		51F618F71B8ACC5700A0F0DC /* JSWalkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				51F618F81B8ACC5700A0F0DC /* JSWalkthroughViewController.swift */,
+			);
+			path = JSWalkthrough;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +214,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51F618F91B8ACC5700A0F0DC /* WalkthroughStoryboard.storyboard in Resources */,
 				51F618DB1B8ACBC100A0F0DC /* Main.storyboard in Resources */,
 				51F618E01B8ACBC100A0F0DC /* LaunchScreen.xib in Resources */,
 				51F618DD1B8ACBC100A0F0DC /* Images.xcassets in Resources */,
@@ -212,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51F618FA1B8ACC5700A0F0DC /* JSWalkthroughViewController.swift in Sources */,
 				51F618D81B8ACBC100A0F0DC /* ViewController.swift in Sources */,
 				51F618D61B8ACBC100A0F0DC /* AppDelegate.swift in Sources */,
 			);
@@ -411,6 +435,7 @@
 				51F618F11B8ACBC200A0F0DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51F618F21B8ACBC200A0F0DC /* Build configuration list for PBXNativeTarget "JSWalkthroughTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +444,7 @@
 				51F618F41B8ACBC200A0F0DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
