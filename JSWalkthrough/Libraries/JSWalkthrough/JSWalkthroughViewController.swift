@@ -34,7 +34,7 @@ class JSWalkthroughViewController : UIViewController, UIScrollViewDelegate {
   /// The title of the done button
   var doneButtonTitle: String = "Get Started"
   
-  /// The title of the skip button
+  /// The title of the skip button. If `nil`, the button will be hidden until the last screen
   var skipButtonTitle: String?
   
   /// The `Storyboard ID`'s of the view controllers to be included in the walkthrough.
@@ -156,7 +156,7 @@ class JSWalkthroughViewController : UIViewController, UIScrollViewDelegate {
     if let walkthroughViewControllers = self.walkthroughViewControllers {
       let isOnFirstPage = currentPageNumber == 0;
       let isOnLastPage = currentPageNumber == walkthroughViewControllers.count - 1
-      self.actionButton.hidden = self.skipButtonTitle == nil && !isOnLastPage
+      self.actionButton.hidden = self.skipButtonTitle?.isEmpty == true && !isOnLastPage
       
       if isOnLastPage {
         self.actionButton.setTitle(self.doneButtonTitle, forState: UIControlState.Normal)
